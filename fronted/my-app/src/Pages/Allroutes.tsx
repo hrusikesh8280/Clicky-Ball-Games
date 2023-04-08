@@ -1,10 +1,9 @@
 import React from 'react'
 import{Routes, Route} from "react-router-dom"
 import Loader from '../components/Loader'
-import Play from '../components/Play'
 import Result from '../components/Result'
-import { Game } from '../components/Game'
 import BallsPage from '../components/Play'
+import Game from '../components/Game'
 
 
 const Allroutes = () => {
