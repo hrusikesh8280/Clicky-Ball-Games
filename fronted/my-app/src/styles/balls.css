@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@400;600;800&family=League+Spartan:wght@600&family=Mochiy+Pop+One&family=Montserrat:wght@300;500&family=Playfair+Display:wght@700&family=Poppins:wght@300;500;700&family=Roboto&family=Roboto+Condensed&display=swap");
-* {
+body {
   font-family: "Mochiy Pop One", sans-serif;
+  background-image:url("../assets/game_back.png");
+  background-size:cover;
+  background-position: center;
 }
 .balls {
   width: 100%;
@@ -15,6 +18,8 @@
 .heading {
   color: white;
   padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .four_balls {
@@ -83,6 +88,8 @@
   align-items: center;
   gap: 10px;
   justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
 }
 
 /* for creating the heart-shape shape */
@@ -126,4 +133,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 400px) and (min-width: 270px){
+  .four_balls > div {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
 }
