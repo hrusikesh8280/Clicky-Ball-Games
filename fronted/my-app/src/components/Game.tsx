@@ -3,11 +3,11 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Lottie, { LottieOptions } from "lottie-react";
 // import background from "../assets/menu-background.png";
-import dancer from "../assets/game-dancer.json";
+import dancer from "../assets/ball thinking.json"
 import start from "../assets/start-button.png";
 import loader from "../assets/loader2.json";
 import help from "../assets/help.png";
-import background from "../assets/menu2-border.png"
+import background from "../assets/register-background.png"
 import logo from "../assets/logo.png"
 
 
@@ -70,7 +70,7 @@ const Game: React.FC = () => {
   };
 
   const dancerStyle = {
-    transform: "scale(0.6)"
+    transform: "scale(0.3)"
   };
 
   const textStyle: TextStyle = {
@@ -80,7 +80,7 @@ const Game: React.FC = () => {
     transform: "translateX(-50%)",
     textAlign: "center",
     fontSize: "2.5vw",
-    color: "#f5e07bbb",
+    color: "#e2e2e2ba",
     textShadow: "2px 2px 2px rgb(165, 164, 163)",
     fontFamily: "sans-serif",
     fontWeight: "bold",
@@ -133,7 +133,7 @@ const Game: React.FC = () => {
     setTimeout(() => {
       setLoading(false);
       navigate("/game");
-    }, 4000);
+    }, 5000);
   };
 
   const handleHelp=()=>{
@@ -180,13 +180,15 @@ const Game: React.FC = () => {
             <div style={{ padding: "20px" }}>
               <h2 style={{ marginBottom: "20px", color:"violet" }}>Game Rules</h2>
               <p style={{ lineHeight: "1.5" }}>
-                - Select the color that matches the word shown in the middle.
+                - First Click on Start and then Play the game
+              <br />
+                - Select the ball that you think will change the color.
                 <br />
-                - You have 10 seconds to choose the correct color.
+                - You have 1-4 seconds to choose the correct ball.
                 <br />
                 - You get 1 point for each correct answer.
                 <br />
-                - The game ends after 10 rounds.
+                - The game ends after 5 rounds.
               </p>
               <button style={{ marginTop: "20px",color:"red" }} onClick={() => setShowModal(false)}>Close</button>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Lottie,{LottieOptions} from "lottie-react"
-import ball2 from "../assets/ball2-loader.json"
+import ball2 from "../assets/105778-ball.json"
 import background from "../assets/menu-background.png"
 import logo from "../assets/logo.png"
 interface LoaderProps {}
