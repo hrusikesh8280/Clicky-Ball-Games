@@ -1,10 +1,10 @@
 import React from 'react'
 import{Routes, Route} from "react-router-dom"
 import Loader from '../components/Loader'
-import Result from '../components/Result'
 import BallsPage from '../components/Play'
 import Game from '../components/Game'
 import Register from '../components/Register'
+import { Result } from '../components/Result'
 
 
 
