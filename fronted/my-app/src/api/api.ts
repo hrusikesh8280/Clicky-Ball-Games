@@ -21,11 +21,9 @@ export const postUserData = async(user:userType)=>{
 
     if(userData?.length>0){
         let res = await axios.patch(`https://yellow-frog-kit.cyclic.app`,user)
-        console.log("patch")
         console.log(res)
     }else{
         let res = await axios.post(`https://yellow-frog-kit.cyclic.app`,user)
-        console.log("post")
         console.log(res)
     }
 }
