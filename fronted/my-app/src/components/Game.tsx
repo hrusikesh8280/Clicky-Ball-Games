@@ -7,7 +7,7 @@ import dancer from "../assets/game-dancer.json";
 import start from "../assets/start-button.png";
 import loader from "../assets/loader2.json";
 import help from "../assets/help.png";
-import background from "../assets/menu2-border.png"
+import background from "../assets/register-background.png"
 import logo from "../assets/logo.png"
 
 
