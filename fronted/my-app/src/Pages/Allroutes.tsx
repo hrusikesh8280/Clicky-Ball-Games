@@ -10,8 +10,6 @@ import Leaderboard from "../components/Leaderboard";
 import Result from '../components/Result'
 
 
-
-
 const Allroutes = () => {
   return (
     <Routes>
