@@ -35,4 +35,5 @@ export const getUserData = async()=>{
     let res = await axios.get(`https://yellow-frog-kit.cyclic.app`)
     let userData:userDataType[] = res.data.data
     console.log(userData)
+    return userData
 }
