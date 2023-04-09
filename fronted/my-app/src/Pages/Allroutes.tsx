@@ -7,6 +7,8 @@ import Game from "../components/Game";
 import Register from "../components/Register";
 import Leaderboard from "../components/Leaderboard";
 
+
+
 const Allroutes = () => {
   return (
     <Routes>
@@ -22,8 +24,8 @@ const Allroutes = () => {
       <Route path="/result" element={<Result />}>
         Result
       </Route>
-      <Route path="/bord" element={<Leaderboard />}></Route>
-      <Route path="register" element={<Register />}></Route>
+      <Route path="/board" element={<Leaderboard />}></Route>
+      <Route path="/register" element={<Register />}></Route>
     </Routes>
   );
 };
