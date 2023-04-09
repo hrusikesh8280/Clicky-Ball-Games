@@ -3,13 +3,14 @@ import { useNavigate } from 'react-router-dom'
 import Lottie,{LottieOptions} from "lottie-react"
 import ball2 from "../assets/ball2-loader.json"
 import background from "../assets/menu-background.png"
+import logo from "../assets/logo.png"
 interface LoaderProps {}
 
 const Loader: React.FC<LoaderProps> = () => {
   const navigate = useNavigate();
 
   setTimeout(() => {
-    navigate("/menu");
+    navigate("/register");
   }, 5000);
 
   const options: LottieOptions = {
@@ -23,7 +24,10 @@ const Loader: React.FC<LoaderProps> = () => {
     >
       {/* add any loader content here */}
       <div className="w-250px md:w-400px lg:w-255px mx-auto">
-        <Lottie {...options} />
+        <img src={logo}  alt="logo" className="mx-auto" height="200" width="400" />
+        <div className="w-full text-center">
+          <Lottie {...options} style={{height: "250px", width: "200px", margin: "auto"}} />
+        </div>
       </div>
     </div>
   );

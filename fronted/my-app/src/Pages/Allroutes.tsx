@@ -4,6 +4,9 @@ import Loader from '../components/Loader'
 import Result from '../components/Result'
 import BallsPage from '../components/Play'
 import Game from '../components/Game'
+import Register from '../components/Register'
+
+
 
 
 const Allroutes = () => {
@@ -20,6 +23,9 @@ const Allroutes = () => {
       </Route>
       <Route path="/result" element={<Result/>}>
        Result
+      </Route>
+      <Route path='register' element={<Register/>}>
+
       </Route>
     </Routes>
   )
