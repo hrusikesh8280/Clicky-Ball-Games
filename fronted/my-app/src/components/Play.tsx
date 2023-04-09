@@ -1,14 +1,19 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../styles/balls.css";
 import { motion } from "framer-motion";
 import Lifelines from "./lifelines";
 import useSound from "use-sound";
 import { Textanim } from "./checks/wrong";
 import { Correctans } from "./checks/correct";
+import { useNavigate } from "react-router-dom";
+import styled, { keyframes } from "styled-components";
  const BallsPage = () => {
   const [playDeleteSfx] = useSound("delete.mp3");
   const [playCorrectSfx] = useSound("correct.mp3");
   const [playWrongSfx] = useSound("wrong.mp3");
+
+  // for navigations
+  const navigate = useNavigate()
   // states
   const [score, setScore] = useState<number>(0);
   const [update, setUpdate] = useState<boolean | null>(null);
@@ -33,7 +38,7 @@ import { Correctans } from "./checks/correct";
   //
 
   // functions
-  const startGame = () => {
+   const startGame = () => {
     // for timeout, colotIndex, and randomColor generators
     const timeout = (Math.floor(Math.random() * 4) + 1) * 1000;
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
@@ -65,15 +70,15 @@ import { Correctans } from "./checks/correct";
           fourth_ref.current.style.backgroundColor = `white`;
         }
         clearTimeout(id2);
+        handleClick()
+        setClick(false)
       }, timeout);
       // setuserId(null);
       clearTimeout(id);
-      handleClick();
       setIndex(null);
-      setClick(false);
       setUpdate(null);
     }, timeout);
-  };
+  }
   // checkInput function
 
   const checkInput = (index:number|null, userId:number) => {
@@ -100,19 +105,27 @@ import { Correctans } from "./checks/correct";
     }
   };
 
+  // console.log(lifelines)
+
   const handleClick = () => {
     const newLifelines = [...lifelines];
     newLifelines.pop();
     setLifelines(newLifelines);
     playDeleteSfx();
   };
-
   // html
+
+  useEffect(()=>{
+  if(lifelines.length<1){
+    localStorage.setItem("userScore",JSON.stringify(score))
+    navigate("/result")
+  }
+  },[lifelines])
   return (
-    <div>
-      <h1 className="heading">Start & Pick a Ball</h1>
+    <div className="balls_body">
+      <TextWrapper>Start & Pick a Ball</TextWrapper>
       <div className="life_line">
-        <h2>LIFES:{lifelines.length}</h2>
+      <TextWrapper2>LIFES:{lifelines.length}</TextWrapper2>
         <Lifelines lifelines={lifelines} />
       </div>
       <div className="four_balls">
@@ -188,7 +201,7 @@ import { Correctans } from "./checks/correct";
       </motion.div>
       <div className="user_buttons">
         <motion.button
-          onClick={startGame}
+          onClick={()=>{startGame()}}
           disabled={click ? true : false}
           whileHover={{ scale: 1.1, rotate: -10 }}
           whileTap={{ scale: 0.9 }}
@@ -209,3 +222,32 @@ import { Correctans } from "./checks/correct";
 };
 
 export default BallsPage
+
+
+// for styled components
+const slideIn = keyframes`
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    `;
+const TextWrapper = styled.div`
+        font-size: 2rem;
+        font-weight: bold;
+        color: #add9ee;
+        text-align: center;
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+        animation: ${slideIn} 1.5s ease-in-out;
+    `;
+const TextWrapper2 = styled.div`
+        font-size: 20px;
+        font-weight: bold;
+        color: #add9ee;
+        text-align: center;
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+        animation: ${slideIn} 1.5s ease-in-out;
+    `;

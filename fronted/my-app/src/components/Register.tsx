@@ -10,10 +10,11 @@ const Register = () => {
   
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
+      localStorage.setItem("username",JSON.stringify(username))
       setShowMessage(true);
       setTimeout(() => {
         navigate('/menu');
-      }, 6000);
+      }, 2000);
     };
   
     return (
