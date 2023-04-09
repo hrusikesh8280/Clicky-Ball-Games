@@ -10,6 +10,8 @@ import Leaderboard from "../components/Leaderboard";
 import Result from '../components/Result'
 
 
+
+
 const Allroutes = () => {
   return (
     <Routes>
@@ -25,9 +27,8 @@ const Allroutes = () => {
       <Route path="/result" element={<Result/>}>
        Result
       </Route>
-      <Route path="/leaderboard" element={<Leaderboard />}></Route>
-      <Route path="register" element={<Register />}></Route>
-
+      <Route path="/board" element={<Leaderboard />}></Route>
+      <Route path="/register" element={<Register />}></Route>
     </Routes>
   );
 };
