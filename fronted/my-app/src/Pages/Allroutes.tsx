@@ -6,7 +6,7 @@ import Result from '../components/Result'
 import BallsPage from '../components/Play'
 import Game from '../components/Game'
 import Register from '../components/Register'
-import Rating from '../components/Rating'
+
 import Leaderboard from "../components/Leaderboard";
 
 
@@ -25,9 +25,7 @@ const Allroutes = () => {
       <Route path="/result" element={<Result/>}>
        Result
       </Route>
-    
-      <Route path='rating' element={<Rating/>} />
-      <Route path="/bord" element={<Leaderboard />}></Route>
+      <Route path="/leaderboard" element={<Leaderboard />}></Route>
       <Route path="register" element={<Register />}></Route>
 
     </Routes>
