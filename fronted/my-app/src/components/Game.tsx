@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Lottie, { LottieOptions } from "lottie-react";
 // import background from "../assets/menu-background.png";
-import dancer from "../assets/game-dancer.json";
+import dancer from "../assets/ball thinking.json"
 import start from "../assets/start-button.png";
 import loader from "../assets/loader2.json";
 import help from "../assets/help.png";
@@ -70,7 +70,7 @@ const Game: React.FC = () => {
   };
 
   const dancerStyle = {
-    transform: "scale(0.6)"
+    transform: "scale(0.3)"
   };
 
   const textStyle: TextStyle = {
@@ -80,7 +80,7 @@ const Game: React.FC = () => {
     transform: "translateX(-50%)",
     textAlign: "center",
     fontSize: "2.5vw",
-    color: "#f5e07bbb",
+    color: "#e2e2e2ba",
     textShadow: "2px 2px 2px rgb(165, 164, 163)",
     fontFamily: "sans-serif",
     fontWeight: "bold",

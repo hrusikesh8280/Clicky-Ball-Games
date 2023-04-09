@@ -9,6 +9,7 @@ import styled,{keyframes} from "styled-components"
 import repeat from "../assets/repeat-button.png"
 import home from "../assets/home.png"
 import { useNavigate } from 'react-router-dom'
+import leaderboard from "../assets/competition.png"
 
 
 type ButtonStyle = {
@@ -38,7 +39,7 @@ const Result: React.FC<ResultProps> = () => {
     const repeatButtonStyle: ButtonStyle = {
         position: "absolute",
         bottom: "20px",
-        right: "15%",
+        right: "10%",
         width: "70px",
         height: "80px",
         background: `url(${repeat}) no-repeat center center`,
@@ -49,11 +50,22 @@ const Result: React.FC<ResultProps> = () => {
       const homeButtonStyle: ButtonStyle = {
         position: "absolute",
         bottom: "20px",
-        right: "55%",
+        right: "75%",
         width: "70px",
         height: "80px",
         background: `url(${home}) no-repeat center center`,
         backgroundSize: "60px 60px",
+        border: "none",
+        borderRadius: "30px"
+      };
+      const leaderBoardButtonStyle: ButtonStyle = {
+        position: "absolute",
+        bottom: "20px",
+        right: "42%",
+        width: "70px",
+        height: "80px",
+        background: `url(${leaderboard}) no-repeat center center`,
+        backgroundSize: "79px 78px",
         border: "none",
         borderRadius: "30px"
       };
@@ -65,6 +77,10 @@ const Result: React.FC<ResultProps> = () => {
       const handleHome=()=>{
         navigate("/menu")
       }
+      const handleLeaderBoard=()=>{
+        navigate("/leaderboard")
+      }
+
 
     let animation;
     let ratingText;
@@ -72,7 +88,7 @@ const Result: React.FC<ResultProps> = () => {
         animation = <Lottie animationData={star5} loop autoplay style={{ height: "350px", width: "400px", margin: "auto" }} />;
         ratingText = "Great!";
     } else if (score >= 4) {
-        animation = <Lottie animationData={star4} loop autoplay style={{ height: "550px", width: "500px", margin: "auto" }} />;
+        animation = <Lottie animationData={star4} loop autoplay style={{ height: "450px", width: "500px", margin: "auto" }} />;
         ratingText = "Awesome!";
     } else if (score >= 2) {
         animation = <Lottie animationData={star3} loop autoplay style={{ height: "450px", width: "500px", margin: "auto" }} />;
@@ -118,11 +134,17 @@ const Result: React.FC<ResultProps> = () => {
             style={repeatButtonStyle}
             onClick={handleRepeat}
           />
+                    <button
+            className="w-10 h-6"
+            style={leaderBoardButtonStyle}
+            onClick={handleLeaderBoard}
+          />
           <button
             className="w-10 h-6"
             style={homeButtonStyle}
             onClick={handleHome}
           />
+
         </div>
       </div>
     )
