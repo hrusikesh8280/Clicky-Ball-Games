@@ -7,8 +7,6 @@ import Game from "../components/Game";
 import Register from "../components/Register";
 import Leaderboard from "../components/Leaderboard";
 
-
-
 const Allroutes = () => {
   return (
     <Routes>
