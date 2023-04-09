@@ -6,6 +6,7 @@ import useSound from "use-sound";
 import { Textanim } from "./checks/wrong";
 import { Correctans } from "./checks/correct";
 import { useNavigate } from "react-router-dom";
+import styled, { keyframes } from "styled-components";
  const BallsPage = () => {
   const [playDeleteSfx] = useSound("delete.mp3");
   const [playCorrectSfx] = useSound("correct.mp3");
@@ -116,14 +117,15 @@ import { useNavigate } from "react-router-dom";
 
   useEffect(()=>{
   if(lifelines.length<1){
+    localStorage.setItem("userScore",JSON.stringify(score))
     navigate("/result")
   }
   },[lifelines])
   return (
     <div className="balls_body">
-      <h1 className="heading">Start & Pick a Ball</h1>
+      <TextWrapper>Start & Pick a Ball</TextWrapper>
       <div className="life_line">
-        <h2>LIFES:{lifelines.length}</h2>
+      <TextWrapper2>LIFES:{lifelines.length}</TextWrapper2>
         <Lifelines lifelines={lifelines} />
       </div>
       <div className="four_balls">
@@ -220,3 +222,32 @@ import { useNavigate } from "react-router-dom";
 };
 
 export default BallsPage
+
+
+// for styled components
+const slideIn = keyframes`
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    `;
+const TextWrapper = styled.div`
+        font-size: 2rem;
+        font-weight: bold;
+        color: #add9ee;
+        text-align: center;
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+        animation: ${slideIn} 1.5s ease-in-out;
+    `;
+const TextWrapper2 = styled.div`
+        font-size: 20px;
+        font-weight: bold;
+        color: #add9ee;
+        text-align: center;
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+        animation: ${slideIn} 1.5s ease-in-out;
+    `;
