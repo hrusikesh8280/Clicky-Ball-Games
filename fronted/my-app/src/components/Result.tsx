@@ -10,7 +10,6 @@ import repeat from "../assets/repeat-button.png"
 import home from "../assets/home.png"
 import { useNavigate } from 'react-router-dom'
 
-
 type ButtonStyle = {
     position: "absolute";
     top?: string;
@@ -128,4 +127,5 @@ const Result: React.FC<ResultProps> = () => {
     )
 }
 export default Result;
+
 

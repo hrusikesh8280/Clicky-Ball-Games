@@ -133,7 +133,7 @@ const Game: React.FC = () => {
     setTimeout(() => {
       setLoading(false);
       navigate("/game");
-    }, 4000);
+    }, 5000);
   };
 
   const handleHelp=()=>{
