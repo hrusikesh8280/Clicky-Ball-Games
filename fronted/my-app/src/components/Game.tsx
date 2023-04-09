@@ -180,13 +180,15 @@ const Game: React.FC = () => {
             <div style={{ padding: "20px" }}>
               <h2 style={{ marginBottom: "20px", color:"violet" }}>Game Rules</h2>
               <p style={{ lineHeight: "1.5" }}>
-                - Select the color that matches the word shown in the middle.
+                - First Click on Start and then Play the game
+              <br />
+                - Select the ball that you think will change the color.
                 <br />
-                - You have 10 seconds to choose the correct color.
+                - You have 1-4 seconds to choose the correct ball.
                 <br />
                 - You get 1 point for each correct answer.
                 <br />
-                - The game ends after 10 rounds.
+                - The game ends after 5 rounds.
               </p>
               <button style={{ marginTop: "20px",color:"red" }} onClick={() => setShowModal(false)}>Close</button>
             </div>

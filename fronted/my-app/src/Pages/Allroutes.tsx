@@ -5,9 +5,9 @@ import Loader from '../components/Loader'
 import BallsPage from '../components/Play'
 import Game from '../components/Game'
 import Register from '../components/Register'
-import { Result } from '../components/Result'
 
 import Leaderboard from "../components/Leaderboard";
+import Result from '../components/Result'
 
 
 const Allroutes = () => {

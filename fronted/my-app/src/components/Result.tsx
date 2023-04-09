@@ -1,5 +1,5 @@
-import React from 'react'
-import Lottie,{LottieOptions} from "lottie-react"
+import React, { useEffect } from 'react'
+import Lottie from "lottie-react"
 import background from"../assets/register-background.png"
 import star5 from "../assets/5-star.json"
 import star4 from "../assets/4-star-new.json"
@@ -9,6 +9,7 @@ import styled,{keyframes} from "styled-components"
 import repeat from "../assets/repeat-button.png"
 import home from "../assets/home.png"
 import { useNavigate } from 'react-router-dom'
+import { postUserData, userType } from '../api/api'
 import leaderboard from "../assets/competition.png"
 
 type ButtonStyle = {
@@ -32,9 +33,13 @@ const Result: React.FC<ResultProps> = () => {
 
     const navigate = useNavigate();
 
-    let score = 7;
+    let score = JSON.parse(localStorage.getItem("userScore")) || 0
+    let userName = JSON.parse(localStorage.getItem("username"))  || null
 
-
+    const userData:userType = {
+      username:userName,
+      score:Number(score)
+    }
     const repeatButtonStyle: ButtonStyle = {
         position: "absolute",
         bottom: "20px",
@@ -116,7 +121,12 @@ const Result: React.FC<ResultProps> = () => {
         animation: ${slideIn} 1.5s ease-in-out;
     `;
 
-  
+
+    // for posting the username and score
+
+    useEffect(()=>{
+      postUserData(userData)
+    },[])
     return (
         <div
         className="h-screen flex items-center"
