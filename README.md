@@ -26,3 +26,10 @@ The objective of the game is to match the colors as quickly as possible before t
 - Mongo
 - Express
 - Node
+
+Table of Contents
+.Screenshots
+.Installation
+.How to Play
+.Technologies Used
+.Contributors
