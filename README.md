@@ -2,6 +2,41 @@
 
 
 <p align="center"><img src="https://user-images.githubusercontent.com/86557158/230982198-dd56e6c5-f862-4135-89ae-5b8ab8fc3bc8.png" width="400"></p>
-Cliccky Balls is a fun and fast-paced color matching game created by **Hrusikesh Ghanta** (@hrusikesh8280), **Vishal Singh** (@vishal-git9), **Prabhat Kumar** (@ParbhatKataria1), and **Anwar Hussain** (@AnwarHussain455) using Mongo, Express, Node, React, TypeScript, and Tailwind CSS in just 48 hours. The objective of the game is to match the colors as quickly as possible before time runs out.
 
 
+Cliccky Balls is a fun and fast-paced color matching game created by **Digital Dreamers** using Mongo, Express, Node, React, TypeScript, and Tailwind CSS in just 48 hours. 
+
+## About the Game
+
+The objective of the game is to match the colors as quickly as possible before time runs out. The game features beautiful graphics, intuitive gameplay, and challenging levels that will keep you entertained for hours.
+
+## Team Members
+
+- Hrusikesh (@hrusikesh8280)
+- Vishal (@vishal-git9)
+- Prabhat (@github.com/ParbhatKataria1)
+- Anwar (@anwar)
+
+Cliccky Balls is a fun and fast-paced color matching game created by **Team Awesome** using Mongo, Express, Node, React, TypeScript, and Tailwind CSS in just 48 hours. 
+
+## About the Game
+
+The objective of the game is to match the colors as quickly as possible before time runs out. The game features beautiful graphics, intuitive gameplay, and challenging levels that will keep you entertained for hours.
+
+## Team Members
+
+- Hrusikesh Ghadei ([@hrusikesh](https://github.com/hrusikesh8280))
+- Vishal Singh ([@vishal](https://github.com/vishal-git9))
+- Prabhat ([@prabhat](https://github.com/ParbhatKataria1))
+- Md Anwar Hossain ([@anwar]([https://github.com/anwar](https://github.com/anwarjitme)))
+
+## Tags
+
+- Color matching
+- Fast-paced
+- React
+- TypeScript
+- Tailwind CSS
+- Mongo
+- Express
+- Node
