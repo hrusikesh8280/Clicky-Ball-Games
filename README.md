@@ -34,3 +34,7 @@ The objective of the game is to match the colors as quickly as possible before t
 | [How to Play](#how-to-play) |
 | [Technologies Used](#technologies-used) |
 | [Contributors](#contributors) |
+
+<h1>Screenshots</h1>
+<h3>Loader Page</h3>
+
