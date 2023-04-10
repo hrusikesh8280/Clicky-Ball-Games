@@ -27,9 +27,10 @@ The objective of the game is to match the colors as quickly as possible before t
 - Express
 - Node
 
-Table of Contents
-Screenshots
-Installation
-How to Play
-Technologies Used
-Contributors
+| [Table of Contents](#table-of-contents) |
+| ------- |
+| [Screenshots](#screenshots) |
+| [Installation](#installation) |
+| [How to Play](#how-to-play) |
+| [Technologies Used](#technologies-used) |
+| [Contributors](#contributors) |
