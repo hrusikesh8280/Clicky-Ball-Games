@@ -38,4 +38,5 @@ The objective of the game is to match the colors as quickly as possible before t
 
 
 Screenshots
+
 Loader Page
