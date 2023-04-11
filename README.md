@@ -1,4 +1,4 @@
-<div align="center"><h1>Cliccky Balls</h1></div>
+<div align="center"><h1>Clicky Balls</h1></div>
 
 
 <p align="center"><img src="https://user-images.githubusercontent.com/86557158/230982198-dd56e6c5-f862-4135-89ae-5b8ab8fc3bc8.png" width="400"></p>
