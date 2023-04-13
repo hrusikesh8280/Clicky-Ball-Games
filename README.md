@@ -3,7 +3,7 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/86557158/230982198-dd56e6c5-f862-4135-89ae-5b8ab8fc3bc8.png" width="400"></p>
 
-Cliccky Balls is a fun and fast-paced color matching game created by **Team Awesome** using Mongo, Express, Node, React, TypeScript, and Tailwind CSS in just 48 hours. 
+Cliccky Balls is a fun and fast-paced color matching game created by **Digital-Dreamers** using Mongo, Express, Node, React, TypeScript, and Tailwind CSS in just 48 hours. 
 
 ## About the Game
 
