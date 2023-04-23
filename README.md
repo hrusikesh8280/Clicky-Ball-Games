@@ -47,7 +47,8 @@ The objective of the game is to match the colors as quickly as possible before t
 
 
 <h3>After Registration The user name showing</h3>
-![After Register](https://user-images.githubusercontent.com/86557158/233829441-c2ed2d3f-c157-47a6-90ff-321ab84b6d35.PNG)
+![After Register](https://user-images.githubusercontent.com/86557158/233829709-69a7d555-d4e9-4069-89de-14e6750e334c.PNG)
+
 
 <h3>Home Page</h3>
 ![Home apge](https://user-images.githubusercontent.com/86557158/233829465-098feae9-a453-4759-82fc-49d5a7e5e461.PNG)
