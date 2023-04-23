@@ -40,5 +40,6 @@ The objective of the game is to match the colors as quickly as possible before t
 <h1>Screenshots</h1>
 <h3>Loader Page</h3>
 
+![loading](https://user-images.githubusercontent.com/86557158/233829072-c8a80107-638a-423b-a8e0-ff47ef0593ef.PNG)
 
 
