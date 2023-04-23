@@ -49,6 +49,23 @@ The objective of the game is to match the colors as quickly as possible before t
 <h3>After Registration The user name showing</h3>
 ![After Register](https://user-images.githubusercontent.com/86557158/233829769-7f53a8ed-a6d9-4b82-9bd1-c86c1071569a.PNG)
 
+<h3>Home Page</h3>
+![Home apge](https://user-images.githubusercontent.com/86557158/233829465-098feae9-a453-4759-82fc-49d5a7e5e461.PNG)
+
+<h3>Game Rules</h3>
+![Help Button](https://user-images.githubusercontent.com/86557158/233829495-12c66650-5784-46ea-a566-122029618e42.PNG)
+
+<h3>Game Page</h3>
+![Game-page-1](https://user-images.githubusercontent.com/86557158/233829531-b98c9307-00f1-4f08-958f-2bd67aebabdb.PNG)
+
+<h3>Game-Play</h3>
+![Game-mode-1](https://user-images.githubusercontent.com/86557158/233829562-b3617043-7476-40a6-ba0a-7376fb2cb743.PNG)
+
+<h3>Results Page</h3>
+![Result Page](https://user-images.githubusercontent.com/86557158/233829585-cd6d0e76-65ba-476a-9458-80ad0aa3e349.PNG)
+
+<h3>Leaderboard Page</h3>
+![Leaderbord page](https://user-images.githubusercontent.com/86557158/233829597-c62bb411-911f-4c85-a185-62b8d56f7e44.PNG)
 
 
 
